@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5A38B51E1EB331002C48AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A38B41E1EB331002C48AC /* AppDelegate.swift */; };
+		4C5A38B71E1EB331002C48AC /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A38B61E1EB331002C48AC /* DemoViewController.swift */; };
+		4C5A38BA1E1EB331002C48AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A38B81E1EB331002C48AC /* Main.storyboard */; };
+		4C5A38BC1E1EB331002C48AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A38BB1E1EB331002C48AC /* Assets.xcassets */; };
+		4C5A38BF1E1EB331002C48AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C5A38BD1E1EB331002C48AC /* LaunchScreen.storyboard */; };
+		4C5A38CA1E1EB331002C48AC /* SwiftySwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A38C91E1EB331002C48AC /* SwiftySwitchTests.swift */; };
+		4C5A38D51E1EB331002C48AC /* SwiftySwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A38D41E1EB331002C48AC /* SwiftySwitchUITests.swift */; };
+		4C5A38E51E1EB554002C48AC /* SwiftySwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5A38E41E1EB554002C48AC /* SwiftySwitch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C5A38C61E1EB331002C48AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5A38A91E1EB331002C48AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5A38B01E1EB331002C48AC;
+			remoteInfo = SwiftySwitch;
+		};
+		4C5A38D11E1EB331002C48AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C5A38A91E1EB331002C48AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5A38B01E1EB331002C48AC;
+			remoteInfo = SwiftySwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C5A38B11E1EB331002C48AC /* SwiftySwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftySwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5A38B41E1EB331002C48AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C5A38B61E1EB331002C48AC /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		4C5A38B91E1EB331002C48AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C5A38BB1E1EB331002C48AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C5A38BE1E1EB331002C48AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C5A38C01E1EB331002C48AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5A38C51E1EB331002C48AC /* SwiftySwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5A38C91E1EB331002C48AC /* SwiftySwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySwitchTests.swift; sourceTree = "<group>"; };
+		4C5A38CB1E1EB331002C48AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5A38D01E1EB331002C48AC /* SwiftySwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5A38D41E1EB331002C48AC /* SwiftySwitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySwitchUITests.swift; sourceTree = "<group>"; };
+		4C5A38D61E1EB331002C48AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5A38E41E1EB554002C48AC /* SwiftySwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftySwitch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5A38AE1E1EB331002C48AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A38C21E1EB331002C48AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A38CD1E1EB331002C48AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5A38A81E1EB331002C48AC = {
+			isa = PBXGroup;
+			children = (
+				4C5A38B31E1EB331002C48AC /* SwiftySwitch */,
+				4C5A38C81E1EB331002C48AC /* SwiftySwitchTests */,
+				4C5A38D31E1EB331002C48AC /* SwiftySwitchUITests */,
+				4C5A38B21E1EB331002C48AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5A38B21E1EB331002C48AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A38B11E1EB331002C48AC /* SwiftySwitch.app */,
+				4C5A38C51E1EB331002C48AC /* SwiftySwitchTests.xctest */,
+				4C5A38D01E1EB331002C48AC /* SwiftySwitchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5A38B31E1EB331002C48AC /* SwiftySwitch */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A38B41E1EB331002C48AC /* AppDelegate.swift */,
+				4C5A38B61E1EB331002C48AC /* DemoViewController.swift */,
+				4C5A38B81E1EB331002C48AC /* Main.storyboard */,
+				4C5A38E41E1EB554002C48AC /* SwiftySwitch.swift */,
+				4C5A38BB1E1EB331002C48AC /* Assets.xcassets */,
+				4C5A38BD1E1EB331002C48AC /* LaunchScreen.storyboard */,
+				4C5A38C01E1EB331002C48AC /* Info.plist */,
+			);
+			path = SwiftySwitch;
+			sourceTree = "<group>";
+		};
+		4C5A38C81E1EB331002C48AC /* SwiftySwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A38C91E1EB331002C48AC /* SwiftySwitchTests.swift */,
+				4C5A38CB1E1EB331002C48AC /* Info.plist */,
+			);
+			path = SwiftySwitchTests;
+			sourceTree = "<group>";
+		};
+		4C5A38D31E1EB331002C48AC /* SwiftySwitchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C5A38D41E1EB331002C48AC /* SwiftySwitchUITests.swift */,
+				4C5A38D61E1EB331002C48AC /* Info.plist */,
+			);
+			path = SwiftySwitchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5A38B01E1EB331002C48AC /* SwiftySwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5A38D91E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitch" */;
+			buildPhases = (
+				4C5A38AD1E1EB331002C48AC /* Sources */,
+				4C5A38AE1E1EB331002C48AC /* Frameworks */,
+				4C5A38AF1E1EB331002C48AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftySwitch;
+			productName = SwiftySwitch;
+			productReference = 4C5A38B11E1EB331002C48AC /* SwiftySwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C5A38C41E1EB331002C48AC /* SwiftySwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5A38DC1E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitchTests" */;
+			buildPhases = (
+				4C5A38C11E1EB331002C48AC /* Sources */,
+				4C5A38C21E1EB331002C48AC /* Frameworks */,
+				4C5A38C31E1EB331002C48AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C5A38C71E1EB331002C48AC /* PBXTargetDependency */,
+			);
+			name = SwiftySwitchTests;
+			productName = SwiftySwitchTests;
+			productReference = 4C5A38C51E1EB331002C48AC /* SwiftySwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C5A38CF1E1EB331002C48AC /* SwiftySwitchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5A38DF1E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitchUITests" */;
+			buildPhases = (
+				4C5A38CC1E1EB331002C48AC /* Sources */,
+				4C5A38CD1E1EB331002C48AC /* Frameworks */,
+				4C5A38CE1E1EB331002C48AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C5A38D21E1EB331002C48AC /* PBXTargetDependency */,
+			);
+			name = SwiftySwitchUITests;
+			productName = SwiftySwitchUITests;
+			productReference = 4C5A38D01E1EB331002C48AC /* SwiftySwitchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5A38A91E1EB331002C48AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Energy Sense Finance";
+				TargetAttributes = {
+					4C5A38B01E1EB331002C48AC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WMB88W37N2;
+						ProvisioningStyle = Automatic;
+					};
+					4C5A38C41E1EB331002C48AC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WMB88W37N2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C5A38B01E1EB331002C48AC;
+					};
+					4C5A38CF1E1EB331002C48AC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WMB88W37N2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4C5A38B01E1EB331002C48AC;
+					};
+				};
+			};
+			buildConfigurationList = 4C5A38AC1E1EB331002C48AC /* Build configuration list for PBXProject "SwiftySwitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C5A38A81E1EB331002C48AC;
+			productRefGroup = 4C5A38B21E1EB331002C48AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5A38B01E1EB331002C48AC /* SwiftySwitch */,
+				4C5A38C41E1EB331002C48AC /* SwiftySwitchTests */,
+				4C5A38CF1E1EB331002C48AC /* SwiftySwitchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C5A38AF1E1EB331002C48AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A38BF1E1EB331002C48AC /* LaunchScreen.storyboard in Resources */,
+				4C5A38BC1E1EB331002C48AC /* Assets.xcassets in Resources */,
+				4C5A38BA1E1EB331002C48AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A38C31E1EB331002C48AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A38CE1E1EB331002C48AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5A38AD1E1EB331002C48AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A38B71E1EB331002C48AC /* DemoViewController.swift in Sources */,
+				4C5A38E51E1EB554002C48AC /* SwiftySwitch.swift in Sources */,
+				4C5A38B51E1EB331002C48AC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A38C11E1EB331002C48AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A38CA1E1EB331002C48AC /* SwiftySwitchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5A38CC1E1EB331002C48AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5A38D51E1EB331002C48AC /* SwiftySwitchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C5A38C71E1EB331002C48AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C5A38B01E1EB331002C48AC /* SwiftySwitch */;
+			targetProxy = 4C5A38C61E1EB331002C48AC /* PBXContainerItemProxy */;
+		};
+		4C5A38D21E1EB331002C48AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C5A38B01E1EB331002C48AC /* SwiftySwitch */;
+			targetProxy = 4C5A38D11E1EB331002C48AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C5A38B81E1EB331002C48AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5A38B91E1EB331002C48AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C5A38BD1E1EB331002C48AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5A38BE1E1EB331002C48AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C5A38D71E1EB331002C48AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4C5A38D81E1EB331002C48AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C5A38DA1E1EB331002C48AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WMB88W37N2;
+				INFOPLIST_FILE = SwiftySwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C5A38DB1E1EB331002C48AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WMB88W37N2;
+				INFOPLIST_FILE = SwiftySwitch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C5A38DD1E1EB331002C48AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WMB88W37N2;
+				INFOPLIST_FILE = SwiftySwitchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftySwitch.app/SwiftySwitch";
+			};
+			name = Debug;
+		};
+		4C5A38DE1E1EB331002C48AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WMB88W37N2;
+				INFOPLIST_FILE = SwiftySwitchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftySwitch.app/SwiftySwitch";
+			};
+			name = Release;
+		};
+		4C5A38E01E1EB331002C48AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WMB88W37N2;
+				INFOPLIST_FILE = SwiftySwitchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwiftySwitch;
+			};
+			name = Debug;
+		};
+		4C5A38E11E1EB331002C48AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WMB88W37N2;
+				INFOPLIST_FILE = SwiftySwitchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SwiftySwitch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5A38AC1E1EB331002C48AC /* Build configuration list for PBXProject "SwiftySwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A38D71E1EB331002C48AC /* Debug */,
+				4C5A38D81E1EB331002C48AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5A38D91E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A38DA1E1EB331002C48AC /* Debug */,
+				4C5A38DB1E1EB331002C48AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C5A38DC1E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A38DD1E1EB331002C48AC /* Debug */,
+				4C5A38DE1E1EB331002C48AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C5A38DF1E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5A38E01E1EB331002C48AC /* Debug */,
+				4C5A38E11E1EB331002C48AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C5A38A91E1EB331002C48AC /* Project object */;
+}
