@@ -64,7 +64,7 @@ public class SwiftySwitch: UIView {
     }
     @IBInspectable public var dotTime: Double = 1 {
         didSet {
-            if dotTime > 20 {
+            if dotTime > 20 || dotTime < 0 {
                 dotTime = 1
             }
             config()
