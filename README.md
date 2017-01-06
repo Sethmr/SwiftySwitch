@@ -1,7 +1,7 @@
 # SwiftySwitch
 A Customizable Switch for the Storyboard.
 
-** Use: **<br>
+# Use:<br>
 In order to use SwiftySwitch, drag SwiftySwitch.swift into your project.<br><br>
 
 Next, make a UIView on your storyboard and make its class SwiftySwitch.<br><br>
@@ -31,7 +31,7 @@ Enjoy!!!!!!
 
 
 
-**Options:**<br>
+# Options:<br>
 
 Is On: holds the current state of the switch, changing it performs the animation<br>
 My Size: Holds the width/height of your Switch<br>
