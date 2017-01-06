@@ -18,7 +18,7 @@ Drag an outlet from the SwiftySwitch to the contained viewController.<br><br>
 
 In viewDidLoad add swiftySwitch.delegate = self.<br><br>
 
-Add this function inside the viewController:<br><br>
+Add this function inside the viewController:<br>
 ```objc
 func valueChanged(sender: CustomSwitch) {
     if sender.isOn {
@@ -28,6 +28,7 @@ func valueChanged(sender: CustomSwitch) {
     }
 }
 ```
+<br><br>
 Enjoy!!!!!!<br><br><br><br>
 
 
