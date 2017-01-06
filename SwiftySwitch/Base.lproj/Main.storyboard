@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHm-bf-BXL" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FHm-bf-BXL" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
                                 <rect key="frame" x="38" y="338" width="200" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <userDefinedRuntimeAttributes>
@@ -37,6 +37,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="smallDot0to1">
                                         <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
+                                        <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -64,17 +67,20 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="myColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-tk-nBX" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
+                            <view tag="5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-tk-nBX" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
                                 <rect key="frame" x="8" y="472" width="260" height="20"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <userDefinedRuntimeAttributes>
@@ -103,9 +109,15 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
                                         <color key="value" red="0.1019607843" green="0.68235294120000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="myColor">
+                                        <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ze8-cQ-ICI" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ze8-cQ-ICI" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
                                 <rect key="frame" x="63" y="190" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <userDefinedRuntimeAttributes>
@@ -134,15 +146,21 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
                                         <color key="value" red="0.60784313729999995" green="0.0" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="myColor">
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upf-jZ-2pJ" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
-                                <rect key="frame" x="88" y="131" width="100" height="10"/>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upf-jZ-2pJ" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
+                                <rect key="frame" x="88" y="154" width="100" height="10"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="dotSpacer">
-                                        <integer key="value" value="3"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="mySize">
                                         <size key="value" width="100" height="10"/>
@@ -165,6 +183,52 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
                                         <color key="value" red="0.95638376474380493" green="0.82863777875900269" blue="0.91137403249740601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="myColor">
+                                        <color key="value" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Vr-lK-nYd" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
+                                <rect key="frame" x="88" y="107" width="100" height="29"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="mySize">
+                                        <size key="value" width="100" height="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corners0to1">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotSpacer">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="smallDot0to1">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOffColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotTime">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="myColor">
+                                        <color key="value" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="smallDotColor">
+                                        <color key="value" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -172,6 +236,7 @@
                     </view>
                     <connections>
                         <outlet property="swiftySwitch" destination="Syj-fy-BG2" id="znM-UD-8KF"/>
+                        <outlet property="swiftySwitch1" destination="1Vr-lK-nYd" id="UlL-h9-aX8"/>
                         <outlet property="swiftySwitch2" destination="upf-jZ-2pJ" id="hz5-q5-VAJ"/>
                         <outlet property="swiftySwitch3" destination="ze8-cQ-ICI" id="GNh-xV-6EE"/>
                         <outlet property="swiftySwitch4" destination="FHm-bf-BXL" id="KvO-NZ-fJW"/>
