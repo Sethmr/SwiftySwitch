@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var swiftySwitch: SwiftySwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        swiftySwitch.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func valueChanged(sender: CustomSwitch) {
+        if sender.isOn {
+            //code when switch is turned on
+            print("Switch turned on! :\)")
+        } else {
+            //code when switch is turned off
+            print("Switch turned off! :\(")
+        }
+    }
 }
 
