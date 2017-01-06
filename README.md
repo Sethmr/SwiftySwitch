@@ -21,6 +21,9 @@ Feel free to submit issues for requests if you want me to add any features!<br><
 7. in the class declaration add SwiftySwitchDelegate and add the delegates required function like so:
 ```objc
 class viewController: UIViewController, SwiftySwitchDelegate {
+
+    @IBAction weak var swiftySwitch: SwiftySwitch!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
