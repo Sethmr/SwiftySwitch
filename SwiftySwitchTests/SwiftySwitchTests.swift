@@ -3,7 +3,7 @@
 //  SwiftySwitchTests
 //
 //  Created by Seth Rininger on 1/5/17.
-//  Copyright © 2017 Energy Sense Finance. All rights reserved.
+//  Copyright © 2017 Seth Rininger. All rights reserved.
 //
 
 import XCTest

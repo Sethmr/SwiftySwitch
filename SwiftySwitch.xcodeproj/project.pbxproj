@@ -196,7 +196,7 @@
 				TargetAttributes = {
 					4C5A38B01E1EB331002C48AC = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = WMB88W37N2;
+						DevelopmentTeam = 6576K4J973;
 						ProvisioningStyle = Automatic;
 					};
 					4C5A38C41E1EB331002C48AC = {
@@ -419,10 +419,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WMB88W37N2;
+				DEVELOPMENT_TEAM = 6576K4J973;
 				INFOPLIST_FILE = SwiftySwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sethrininger.SwiftySwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,10 +433,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WMB88W37N2;
+				DEVELOPMENT_TEAM = 6576K4J973;
 				INFOPLIST_FILE = SwiftySwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sethrininger.SwiftySwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,7 +451,7 @@
 				DEVELOPMENT_TEAM = WMB88W37N2;
 				INFOPLIST_FILE = SwiftySwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sethrininger.SwiftySwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftySwitch.app/SwiftySwitch";
@@ -466,7 +466,7 @@
 				DEVELOPMENT_TEAM = WMB88W37N2;
 				INFOPLIST_FILE = SwiftySwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sethrininger.SwiftySwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftySwitch.app/SwiftySwitch";
@@ -480,7 +480,7 @@
 				DEVELOPMENT_TEAM = WMB88W37N2;
 				INFOPLIST_FILE = SwiftySwitchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sethrininger.SwiftySwitchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SwiftySwitch;
@@ -494,7 +494,7 @@
 				DEVELOPMENT_TEAM = WMB88W37N2;
 				INFOPLIST_FILE = SwiftySwitchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.energysensefinance.SwiftySwitchUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sethrininger.SwiftySwitchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SwiftySwitch;
@@ -520,6 +520,7 @@
 				4C5A38DB1E1EB331002C48AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C5A38DC1E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitchTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +529,7 @@
 				4C5A38DE1E1EB331002C48AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C5A38DF1E1EB331002C48AC /* Build configuration list for PBXNativeTarget "SwiftySwitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +538,7 @@
 				4C5A38E11E1EB331002C48AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
