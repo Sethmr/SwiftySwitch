@@ -1,6 +1,7 @@
 # SwiftySwitch
 A Customizable Switch for the Storyboard.
 
+<br><br><br><br>
 # Use:<br>
 In order to use SwiftySwitch, drag SwiftySwitch.swift into your project.<br><br>
 
@@ -18,11 +19,11 @@ Drag an outlet from the SwiftySwitch to the contained viewController.<br><br>
 In viewDidLoad add swiftySwitch.delegate = self.<br><br>
 
 Add this function inside the viewController:<br><br>
-func valueChanged(sender: CustomSwitch) {<br>
-    if sender.isOn {<br>
-        //code when switch is turned on<br>
-    } else {<br>
-        //code when switch is turned off<br>
+func valueChanged(sender: CustomSwitch) {<br><t>
+    if sender.isOn {<br><t><t>
+        //code when switch is turned on<br><t>
+    } else {<br><t><t>
+        //code when switch is turned off<br><t>
     }<br>
 }<br><br>
 
