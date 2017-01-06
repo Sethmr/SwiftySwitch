@@ -17,10 +17,10 @@ A Customizable Switch for the Storyboard.<br>
 
 6. In viewDidLoad add swiftySwitch.delegate = self.<br><br>
 
-7. in the class declaration add SwiftySwitchDelegate like so:
+7. in the class declaration add SwiftySwitchDelegate and add the delegates required function like so:
 ```objc
 class viewController: UIViewController, SwiftySwitchDelegate {
-        override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -29,15 +29,14 @@ class viewController: UIViewController, SwiftySwitchDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-}
-```
-_8. Add this function inside the viewController:
-```objc
-func valueChanged(sender: CustomSwitch) {
-    if sender.isOn {
-        //code when switch is turned on
-    } else {
-        //code when switch is turned off
+    
+    //add this function inside the desired viewController
+    func valueChanged(sender: CustomSwitch) {
+        if sender.isOn {
+            //code when switch is turned on
+        } else {
+            //code when switch is turned off
+        }
     }
 }
 ```
