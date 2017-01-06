@@ -11,16 +11,20 @@ import UIKit
 class ViewController: UIViewController, SwiftySwitchDelegate {
     
     @IBOutlet weak var swiftySwitch: SwiftySwitch!
+    @IBOutlet weak var swiftySwitch2: SwiftySwitch!
+    @IBOutlet weak var swiftySwitch3: SwiftySwitch!
+    @IBOutlet weak var swiftySwitch4: SwiftySwitch!
+    @IBOutlet weak var swiftySwitch5: SwiftySwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        swiftySwitch.delegate = self
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let switchArray = [swiftySwitch, swiftySwitch2, swiftySwitch3, swiftySwitch4, swiftySwitch5]
+        
+        for eachSwitch in switchArray {
+            eachSwitch?.delegate = self
+        }
+//        swiftySwitch.delegate = self
     }
 
     func valueChanged(sender: SwiftySwitch) {

@@ -205,7 +205,7 @@ fileprivate class SwitchBall: UIView {
                 tempView.frame = CGRect(x: 0, y: 0, width: self!.ballDiameter, height: self!.ballDiameter)
                 tempView.layer.cornerRadius = self!.ballDiameter / 2
             }
-            self?.frame.origin.x += (self!.myFrame.width - self!.ballDiameter - (self!.dotSpacer * 2))
+            self?.frame.origin.x = self!.dotSpacer + (self!.myFrame.width - self!.ballDiameter - (self!.dotSpacer * 2))
             self?.layoutIfNeeded()
         }) { [weak self] _ in
             self?.backgroundColor = self!.onColor
