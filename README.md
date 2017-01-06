@@ -1,5 +1,7 @@
 # SwiftySwitch
 A Customizable Switch for the Storyboard.<br>
+The switch prevents being pressed during the one second action of flipping itself.<br>
+The switch inherites directly from UIView, so you can still manipulate it on your own how you see fit.<br>
 Feel free to submit issues for requests if you want me to add any features!<br><br>
 ![Screenshot](https://github.com/Sethmr/SwiftySwitch/blob/master/SwiftySwitch/SwiftySwitches.png)<br>
 # Use:<br>
