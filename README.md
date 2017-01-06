@@ -29,11 +29,6 @@ class viewController: UIViewController, SwiftySwitchDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         swiftySwitch.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     //add this function inside the desired viewController
     func valueChanged(sender: SwiftySwitch) {
