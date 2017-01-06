@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SwiftySwitchDelegate {
     
     @IBOutlet weak var swiftySwitch: SwiftySwitch!
     
@@ -23,13 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func valueChanged(sender: CustomSwitch) {
+    func valueChanged(sender: SwiftySwitch) {
         if sender.isOn {
             //code when switch is turned on
-            print("Switch turned on! :\)")
+            print("Switch turned on! :)")
         } else {
             //code when switch is turned off
-            print("Switch turned off! :\(")
+            print("Switch turned off! :(")
         }
     }
 }

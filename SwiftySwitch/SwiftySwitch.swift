@@ -12,7 +12,7 @@ import UIKit
 public class SwiftySwitch: UIView {
 
     private var ball: SwitchBall!
-    private var delegate: SwiftySwitchDelegate?
+    internal var delegate: SwiftySwitchDelegate?
     private var shouldSkip: Bool = false
     
     @IBInspectable public var isOn: Bool = false {

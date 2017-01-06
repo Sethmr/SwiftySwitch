@@ -25,7 +25,7 @@
                                 <rect key="frame" x="87" y="293" width="200" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="dotSpacer">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
@@ -42,7 +42,7 @@
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Syj-fy-BG2" customClass="SwiftySwitch" customModule="SwiftySwitch" customModuleProvider="target">
                                 <rect key="frame" x="154" y="28" width="66" height="29"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="mySize">
                                         <size key="value" width="66" height="29"/>
@@ -56,7 +56,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="smallDot0to1">
                                         <real key="value" value="0.35999999999999999"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="NO"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
@@ -74,6 +74,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="swiftySwitch" destination="FHm-bf-BXL" id="iew-Rz-5up"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
