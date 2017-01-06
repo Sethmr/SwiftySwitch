@@ -19,7 +19,7 @@ Drag an outlet from the SwiftySwitch to the contained viewController.<br><br>
 In viewDidLoad add swiftySwitch.delegate = self.<br><br>
 
 Add this function inside the viewController:<br><br>
-func valueChanged(sender: CustomSwitch) {<br>&emsp
+func valueChanged(sender: CustomSwitch) {<br><&emsp>
     if sender.isOn {<br>&emsp&emsp
         //code when switch is turned on<br>&emsp
     } else {<br>&emsp&emsp
