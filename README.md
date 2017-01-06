@@ -1,7 +1,7 @@
 # SwiftySwitch
 A Customizable Switch for the Storyboard.<br>
 Feel free to submit issues for requests if you want me to add any features!<br><br>
-![Screenshot](https://github.com/Sethmr/SwiftySwitch/blob/master/SwiftySwitch/Switches.png)<br>
+![Screenshot](https://github.com/Sethmr/SwiftySwitch/blob/master/SwiftySwitch/SwiftySwitches.png)<br>
 # Use:<br>
 1. In order to use SwiftySwitch, drag SwiftySwitch.swift into your project.<br><br>
 
