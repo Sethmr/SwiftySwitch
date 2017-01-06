@@ -31,7 +31,7 @@ class viewController: UIViewController, SwiftySwitchDelegate {
     }
 }
 ```
-8. Add this function inside the viewController:
+88. Add this function inside the viewController:
 ```objc
 func valueChanged(sender: CustomSwitch) {
     if sender.isOn {
