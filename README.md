@@ -36,7 +36,7 @@ class viewController: UIViewController, SwiftySwitchDelegate {
     }
     
     //add this function inside the desired viewController
-    func valueChanged(sender: CustomSwitch) {
+    func valueChanged(sender: SwiftySwitch) {
         if sender.isOn {
             //code when switch is turned on
         } else {
