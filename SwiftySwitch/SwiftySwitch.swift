@@ -49,6 +49,11 @@ public class SwiftySwitch: UIView {
             config()
         }
     }
+    @IBInspectable public var myColor: UIColor = UIColor(red: 35/255, green: 110/255, blue: 129/255, alpha: 1/1) {
+        didSet {
+            config()
+        }
+    }
     @IBInspectable public var corners0to1: CGFloat = 0.5 {
         didSet {
             if corners0to1 > 1 || corners0to1 < 0 {
@@ -57,7 +62,15 @@ public class SwiftySwitch: UIView {
             config()
         }
     }
-    @IBInspectable public var mainColor: UIColor = UIColor(red: 35/255, green: 110/255, blue: 129/255, alpha: 1/1) {
+    @IBInspectable public var dotTime: Double = 1 {
+        didSet {
+            if dotTime > 20 {
+                dotTime = 1
+            }
+            config()
+        }
+    }
+    @IBInspectable public var dotSpacer: Int = 2 {
         didSet {
             config()
         }
@@ -72,12 +85,7 @@ public class SwiftySwitch: UIView {
             config()
         }
     }
-    @IBInspectable public var dotColor: UIColor = UIColor(red: 227/255, green: 49/255, blue: 67/255, alpha: 1/1) {
-        didSet {
-            config()
-        }
-    }
-    @IBInspectable public var dotSpacer: Int = 2 {
+    @IBInspectable public var smallDotColor: UIColor = UIColor(red: 227/255, green: 49/255, blue: 67/255, alpha: 1/1) {
         didSet {
             config()
         }
@@ -116,10 +124,10 @@ public class SwiftySwitch: UIView {
         if CGFloat(dotSpacer) > (myFrame.height / 2) - 2 {
             dotSpacer = 2
         }
-        self.backgroundColor = mainColor
+        self.backgroundColor = myColor
         self.layer.cornerRadius = myFrame.height * corners0to1
         var oldBall = ball
-        ball = SwitchBall(dotOnColor, dotOffColor, dotColor, isOn, myFrame, dotSpacer, smallDot0to1)
+        ball = SwitchBall(dotOnColor, dotOffColor, smallDotColor, isOn, myFrame, dotSpacer, smallDot0to1, dotTime)
         self.addSubview(ball)
         oldBall?.removeFromSuperview()
         oldBall = nil
@@ -153,10 +161,12 @@ fileprivate class SwitchBall: UIView {
     private var dotSpacer: CGFloat!
     private var myFrame: CGRect!
     private var smallDotMultiplier: CGFloat!
+    private var dotTravelTime: TimeInterval!
     
-    fileprivate init(_ onColor: UIColor, _ offColor: UIColor, _ dotColor: UIColor, _ isOn: Bool, _ myFrame: CGRect, _ dotSpace: Int, _ smallDotMultiplier: CGFloat) {
+    fileprivate init(_ onColor: UIColor, _ offColor: UIColor, _ dotColor: UIColor, _ isOn: Bool, _ myFrame: CGRect, _ dotSpace: Int, _ smallDotMultiplier: CGFloat, _ dotTravelTime: TimeInterval) {
         self.myFrame = myFrame
         self.smallDotMultiplier = smallDotMultiplier
+        self.dotTravelTime = dotTravelTime
         dotSpacer = CGFloat(dotSpace)
         ballDiameter = myFrame.height - (dotSpacer * 2)
         if isOn {
@@ -200,7 +210,7 @@ fileprivate class SwitchBall: UIView {
         tempView.layer.cornerRadius = ballDiameter / 2
         self.addSubview(tempView)
         
-        UIView.animate(withDuration: 1, animations: { [weak self] in
+        UIView.animate(withDuration: dotTravelTime, animations: { [weak self] in
             if self != nil {
                 tempView.frame = CGRect(x: 0, y: 0, width: self!.ballDiameter, height: self!.ballDiameter)
                 tempView.layer.cornerRadius = self!.ballDiameter / 2
@@ -213,7 +223,7 @@ fileprivate class SwitchBall: UIView {
             completion()
         }
         
-        UIView.animate(withDuration: 1 - Double(smallDotMultiplier!), delay: Double(smallDotMultiplier!), options: [.transitionCrossDissolve], animations: { [weak self] in
+        UIView.animate(withDuration: (1 - Double(smallDotMultiplier!)) * dotTravelTime, delay: Double(smallDotMultiplier!) * dotTravelTime, options: [.transitionCrossDissolve], animations: { [weak self] in
             self?.centerBall.alpha = 1
             self?.bringSubview(toFront: self!.centerBall)
             self?.layoutIfNeeded()
@@ -225,7 +235,7 @@ fileprivate class SwitchBall: UIView {
         tempView.backgroundColor = onColor
         self.addSubview(tempView)
         self.backgroundColor = offColor
-        UIView.animate(withDuration: 1, animations: { [weak self] in
+        UIView.animate(withDuration: dotTravelTime, animations: { [weak self] in
             if self != nil {
                 tempView.frame = CGRect(x: self!.ballDiameter / 2, y: self!.ballDiameter / 2, width: 0, height: 0)
                 tempView.layer.cornerRadius = self!.ballDiameter / 2
@@ -237,7 +247,7 @@ fileprivate class SwitchBall: UIView {
             completion()
         }
         
-        UIView.animate(withDuration: 1 - Double(smallDotMultiplier!)) { [weak self] in
+        UIView.animate(withDuration: (1 - Double(smallDotMultiplier!)) * dotTravelTime) { [weak self] in
             self?.centerBall.alpha = 0.0
             self?.bringSubview(toFront: self!.centerBall)
             self?.layoutIfNeeded()
