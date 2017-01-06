@@ -37,13 +37,13 @@ Enjoy!!!!!!<br><br><br><br>
 
 Is On: holds the current state of the switch, changing it performs the animation<br><br>
 My Size: Holds the width/height of your Switch<br><br>
-Corners 0to1: A multiplier that changing the borderRadius of the background (0 == no radius, 0.5 == circular, >0.5 == pointed)<br><br>
+Corners 0to1: A multiplier that changing the borderRadius of the background (0 == no radius, 0.5 == circular, >0.5 == pointed) If set greater than 1.0 sets to default.<br><br>
 Main Color: The color of the background<br><br><br>
 
 Dot Off Color: The dot color when on<br><br>
 Dot On Color: The dot color when off<br><br>
-Dot Spacer: The distance between the background and the Inner Circle on top/bottom and (left or right), small == better<br><br><br>
+Dot Spacer: The distance between the background and the Inner Circle on top/bottom and (left or right), small == better, If set too large than sets to default.<br><br><br>
 
 Small Dot Color: The color of the inner small dot that only is there when on, clear if you don't want this<br><br>
-Small Dot 0to1: A multiplier on the inner dot, 0.5 would be half the diameter of the larger dot
+Small Dot 0to1: A multiplier on the inner dot, 0.5 would be half the diameter of the larger dot, If set greater than 1.0 sets to default.
 
