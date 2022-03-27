@@ -135,11 +135,11 @@ public class SwiftySwitch: UIView {
         self.addGestureRecognizer(tapRecognizer)
         self.isAccessibilityElement = true
         self.accessibilityLabel = "CustomSwitch"
-        self.accessibilityTraits = UIAccessibilityTraitButton
+        self.accessibilityTraits = UIAccessibilityTraits.button
         self.isUserInteractionEnabled = true
     }
     
-    func onTap(_ recognizer: UITapGestureRecognizer) {
+    @objc func onTap(_ recognizer: UITapGestureRecognizer) {
         if !isMoving {
             if !isOn {
                 isOn = true
@@ -189,10 +189,10 @@ fileprivate class SwitchBall: UIView {
         centerBall.layer.cornerRadius = centerBallDiameter / 2
         centerBall.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(centerBall)
-        NSLayoutConstraint(item: centerBall, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: centerBallDiameter).isActive = true
-        NSLayoutConstraint(item: centerBall, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: centerBallDiameter).isActive = true
-        NSLayoutConstraint(item: centerBall, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: centerBall, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: centerBall as Any, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: centerBallDiameter).isActive = true
+        NSLayoutConstraint(item: centerBall as Any, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: centerBallDiameter).isActive = true
+        NSLayoutConstraint(item: centerBall as Any, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: centerBall as Any, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
         if isOn {
             centerBall.alpha = 1.0
         } else {
@@ -225,7 +225,7 @@ fileprivate class SwitchBall: UIView {
         
         UIView.animate(withDuration: (1 - Double(smallDotMultiplier!)) * dotTravelTime, delay: Double(smallDotMultiplier!) * dotTravelTime, options: [.transitionCrossDissolve], animations: { [weak self] in
             self?.centerBall.alpha = 1
-            self?.bringSubview(toFront: self!.centerBall)
+            self?.bringSubviewToFront(self!.centerBall)
             self?.layoutIfNeeded()
             }, completion: nil)
     }
@@ -233,6 +233,7 @@ fileprivate class SwitchBall: UIView {
     func turnOff(completion: @escaping () -> Void) {
         let tempView = UIView(frame: CGRect(x: 0, y: 0, width: ballDiameter, height: ballDiameter))
         tempView.backgroundColor = onColor
+        tempView.layer.cornerRadius = ballDiameter / 2
         self.addSubview(tempView)
         self.backgroundColor = offColor
         UIView.animate(withDuration: dotTravelTime, animations: { [weak self] in
@@ -249,7 +250,7 @@ fileprivate class SwitchBall: UIView {
         
         UIView.animate(withDuration: (1 - Double(smallDotMultiplier!)) * dotTravelTime) { [weak self] in
             self?.centerBall.alpha = 0.0
-            self?.bringSubview(toFront: self!.centerBall)
+            self?.bringSubviewToFront(self!.centerBall)
             self?.layoutIfNeeded()
         }
     }
